@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Asgn0</title>
+</head>
+
+<body onload="main()">
+  <canvas id="asg0" width="400" height="400">
+    Please use a browser that supports "canvas"
+  </canvas>
+
+  <br>
+  <!-- input button for first vector -->
+  <label for="v1">v1: x</label>
+  <input type="text" id="v1x" name="v1x" required minlength="1" maxlength="8" size="10">
+  <label for="v1"> y</label>
+  <input type="text" id="v1y" name="v1y" required minlength="1" maxlength="8" size="10">
+  <br>
+
+  <!-- input button for second vector -->
+  <label for="v2">v2: x</label>
+  <input type="text" id="v2x" name="v2x" required minlength="1" maxlength="8" size="10">
+  <label for="v2"> y</label>
+  <input type="text" id="v2y" name="v2y" required minlength="1" maxlength="8" size="10">
+  <br>
+
+  <!-- button for drawing -->
+  <button onclick="handleDrawEvent()">Draw</button>
+  <br> <br>
+  <!-- button for selection -->
+  <label for="operation_selection">Operation: </label>
+  <select id="operation_selection">
+    <option value="Add">Add</option>
+    <option value="Subtract">Subtract</option>
+    <option value="Divide">Divide</option>
+    <option value="Multiply">Multiply</option>
+    <option value="Mag">Magnitude</option>
+    <option value="Norm">Normalize</option>
+    <option value="Angle">Angle between</option>
+    <option value="Area">Area</option>
+  </select>
+
+  <!-- button for scalar -->
+  <label for="operation_selection">Scalar: </label>
+  <input type="text" id="scalar" name="scalar" required minlength="1" maxlength="8" size="10">
+  <br>
+
+  <!-- Draw 2 Button -->
+  <button onclick="handleDrawOperationEvent()">Draw</button>
+
+  <!-- include js file in the library-->
+  <script src="lib/webgl-utils.js"></script>
+  <script src="lib/webgl-debug.js"></script>
+  <script src="lib/cuon-utils.js"></script>
+  <script src="lib/cuon-matrix-cse160.js"></script>
+  <script type=text/javascript src="asg0.js"></script>
+
+
+  <script src="asg0.js"></script>
+</body>
+
+</html>
