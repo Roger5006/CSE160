@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Change a point color</title>
+</head>
+
+<body onload="main()" onmousedown="funcShiftKey(event)">
+
+    <canvas id="webgl" width="400" height="400">
+        Please use a browser that supports "canvas"
+    </canvas>
+
+    <p id="numdot"> XXX </p>
+
+    Head <input type="range" min="-5" max="6" value="0" class="slider" id="headSlide">
+    <br>
+    Lower Leg <input type="range" min="-12" max="12" value="0" class="slider" id="magentaSlide">
+    <br>
+    Thigh <input type="range" min="-12" max="12" value="0" class="slider" id="yellowSlide">
+    Animation:
+    <button type="button" id="animationYellowOnButton">ON</button>
+    <button type="button" id="animationYellowOffButton">OFF</button>
+    <br>
+    Camera Angle <input type="range" min="0" max="360" value="0" class="slider" id="angleSlide">
+    <br>
+    <b>This area is already running out of glasses. </b>
+    <br>
+    <b>You need to help the cow to find a way to exit.</b>
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-cse160.js"></script>
+    <script src="World.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="camera.js"></script>
+</body>
+
+</html>
